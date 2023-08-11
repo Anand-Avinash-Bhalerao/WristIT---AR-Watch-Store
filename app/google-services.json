@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "514433516852",
+    "project_id": "ar-store-d5b68",
+    "storage_bucket": "ar-store-d5b68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514433516852:android:c26cf5e346843ea0a65161",
+        "android_client_info": {
+          "package_name": "com.billion_dollor_company.accessorystore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514433516852-68gb4a0n8t66n5arvrpph53te05n66o5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVeBM7_Ft_Z_nmMz09Cmamv5mdSkPnpE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514433516852-68gb4a0n8t66n5arvrpph53te05n66o5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

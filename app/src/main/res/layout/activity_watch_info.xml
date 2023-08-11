@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".activities.WatchInfoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cv_images"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_cart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/logo_bag"
+            android:theme="@style/IconColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/watch1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_cart"
+            app:layout_constraintStart_toEndOf="@id/iv_back"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_images">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="Apple Watch 5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:text="$400"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+        <ImageView
+            android:id="@+id/iv_stars"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="42dp"
+            android:src="@drawable/baseline_star_24"
+            app:layout_constraintBottom_toBottomOf="@id/tv_price"
+            app:layout_constraintStart_toEndOf="@id/tv_price"
+            app:layout_constraintTop_toTopOf="@id/tv_price" />
+
+        <TextView
+            android:id="@+id/tv_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="4.6"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_price"
+            app:layout_constraintStart_toEndOf="@id/iv_stars"
+            app:layout_constraintTop_toTopOf="@id/tv_price" />
+
+        <ImageView
+            android:id="@+id/iv_favorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/baseline_favorite_border_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:text="Your essential companion is even more powerful. Temperature sensing for deeper insights into women’s health.1 Crash Detection to get help in an emergency.2 Sleep Stages to better understand your sleep. And improved ways to train using the enhanced Workout app. The future of health never looked so good."
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toTopOf="@id/ll_buttons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_price" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll_buttons"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Add to Cart"
+                android:textColor="@color/orange"
+                android:backgroundTint="@color/light_orange"
+                android:textAllCaps="false"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textAllCaps="false"
+                android:text="Buy Now"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/orange"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
