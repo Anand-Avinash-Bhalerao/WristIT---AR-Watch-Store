@@ -41,7 +41,7 @@ class HomeRVAdapter(
         val container: ConstraintLayout = holder.container
         val clickListener:OnClickListener = holder.clickListener
 
-        company.text = info.company
+        company.text = info.company.capitalize()
         name.text = info.name
         origPrice.text = "₹${info.price}"
         Log.d("WATCH_INFO", info.toString())
